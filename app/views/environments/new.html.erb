@@ -1,0 +1,16 @@
+<% provide(:title, "New Environment") %>
+<h1>New Environment</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@environment, url: new_path) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :owner %>
+      <%= f.text_field :owner %>
+
+      <%= f.submit "Create Environment", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

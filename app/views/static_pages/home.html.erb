@@ -1,0 +1,21 @@
+<div class="center jumbotron">
+  <h1>"μελλοντικό"</h1>
+
+  <h2>
+    Welcome to Mellontikós. The Future...
+  </h2>
+
+</div>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="env_info">
+      <ul>
+        <%= form_for @environment do |f| %>
+            <li>
+              Name: <%= @environment.name %> Owner: <%= @environment.owner %>
+            </li>
+        <% end %>
+      </ul>
+    </section>
+  </aside>
+</div>

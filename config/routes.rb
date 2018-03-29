@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-   # get 'static_pages/home'
   root 'static_pages#home'
+  get '/new', to: 'environments#new'
+  get '/new', to: 'environments#create'
+  resources :environments
 end
